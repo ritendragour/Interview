@@ -58,12 +58,15 @@
             if(number.value < 0){
                 Para.innerText = "Please Enter a positive number"
                 Para.className = "text-danger"
-            }else if(number.value % 2 === 0){
-                Para.innerText = "It's Even Number "+number.value + "," +(parseInt(number.value)+2) + ","+(parseInt(number.value)+4)
+            }else if(number.value == 0){
+                Para.innerText = "Number is Zero Please Enter Positive number"
+                Para.className = "text-dark"    
+            } else if(number.value % 2 === 0){
+                Para.innerText = "It's Even Number "+(parseInt(number.value)+2) + ","+(parseInt(number.value)+4)+ ","+(parseInt(number.value)+6)
                 Para.className = "text-success"    
             }
             else if(number.value % 2 !== 0){
-                Para.innerText = "It's Odd Number "+number.value + "," +(parseInt(number.value)+2) + ","+(parseInt(number.value)+4)
+                Para.innerText = "It's Odd Number "+(parseInt(number.value)+2) + ","+(parseInt(number.value)+4)+ ","+(parseInt(number.value)+6)
                 Para.className = "text-Primary"    
             }
         }
